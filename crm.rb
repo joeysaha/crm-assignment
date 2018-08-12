@@ -1,4 +1,4 @@
-require_relatative 'contact'
+require_relative 'contact'
 
 class CRM
 

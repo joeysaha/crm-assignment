@@ -1,5 +1,5 @@
 
-require_relative 'contact'
+require_relative 'contact_copy'
 
 class CRM
 
@@ -133,3 +133,7 @@ end
 
 crm = CRM.new('CRM 1')
 crm.main_menu
+
+at_exit do
+  ActiveRecord::Base.connection.close
+end
