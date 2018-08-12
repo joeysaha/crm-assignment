@@ -1,3 +1,4 @@
+gem 'activerecord', '=4.2.10'
 require 'active_record'
 require 'mini_record'
 
@@ -14,3 +15,4 @@ class Contact < ActiveRecord::Base
   end
 
 end
+Contact.auto_upgrade!
